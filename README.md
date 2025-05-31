@@ -41,20 +41,17 @@ Welcome to the source code for my personal developer portfolio, built using **HT
 
 ---
 
-## 📄 Resume
-
-You can download my resume from the site or directly here:  
-📎 [resume-rohan-sharma.pdf](assets/resume-rohan-sharma.pdf)
-
----
-
 ## 📬 Contact
 
-Feel free to reach out via the contact section of the portfolio or through the links below:
+This is a **demo portfolio project**. The contact details, resume, and social media links are placeholders.
 
-- **Email:** rohan.sharma@email.com
-- **GitHub:** [rohan-dev](https://github.com/rohan-dev)
-- **LinkedIn:** [rohan-dev](https://linkedin.com/in/rohan-dev)
+You can replace them with your own information when reusing this template:
+
+- **Email:** snehavish595@gmail.com
+- **GitHub:** (https://github.com/snehavish595)
+- **LinkedIn:** (https://www.linkedin.com/in/snehavish595/)
+
+Feel free to customize this portfolio to make it your own!
 
 ---
 
