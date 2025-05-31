@@ -41,14 +41,6 @@ Welcome to the source code for my personal developer portfolio, built using **HT
 
 ---
 
-## 📷 Screenshots
-
-| Desktop View | Mobile View |
-| ------------ | ----------- |
-| ![desktop](assets/images/Rohan-Sharma.jpg) | *Coming soon* |
-
----
-
 ## 📄 Resume
 
 You can download my resume from the site or directly here:  
