@@ -29,10 +29,10 @@
 
   #cursor {
     animation: blink 1s step-end infinite;
-    font-weight: 300; /* Adjust as needed for cursor thickness */
+    font-weight: 300; 
   }
 
-  /* New: Class to hide the cursor */
+  /* Class to hide the cursor */
   .cursor-hidden {
     opacity: 0 !important;
   }
