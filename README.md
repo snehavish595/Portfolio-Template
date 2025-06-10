@@ -48,9 +48,9 @@ Experience the template in action!
 ├── styles.css                  // Custom CSS for additional styling and overrides
 ├── script.js                   // JavaScript for interactive elements (e.g., typewriter, Lottie)
 ├── assets/                     // Contains all media assets
-│   ├── resume-rohan-sharma.pdf // Placeholder for your resume
+│   ├── resume-john-doe.pdf // Placeholder for your resume
 │   └── images/                 // Folder for images
-│       └── Rohan-Sharma.jpg    // Placeholder for your profile image
+│       └── John-Doe.jpg    // Placeholder for your profile image
 └── README.md                   // This documentation file
 </pre>
 
@@ -74,8 +74,8 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 - **Projects:** Replace the placeholder project details (`#projects`) with your own. Ensure you update titles, descriptions, and links.
 - **Services:** Adjust the service descriptions (`#services`) to reflect what you offer.
 - **Contact Information:** Update the email, phone, and social media links in the "Contact" section (`#contact`) and the footer.
-- **Resume:** Replace `assets/resume-rohan-sharma.pdf` with your actual PDF resume. Update the `href` in the "Download Resume" button.
-- **Images:** Replace `assets/images/Rohan-Sharma.jpg` with your profile picture. Update other image paths as needed.
+- **Resume:** Replace `assets/resume-john-doe.pdf` with your actual PDF resume. Update the `href` in the "Download Resume" button.
+- **Images:** Replace `assets/images/John-Doe.jpg` with your profile picture. Update other image paths as needed.
 
 ### 4. **Customize Styling (`styles.css` & `tailwind.config.js`)**
 
@@ -114,7 +114,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 ##  Important Notes
 
 - **Contact Form:** The contact form is purely a UI (User Interface). To make it send emails, you will need to integrate it with a backend service (e.g., Formspree, Netlify Forms, custom server-side script with Node.js, PHP, etc.). This template _does not_ include backend functionality.
-- **Resume & Profile Picture:** Remember to replace the placeholder `resume-rohan-sharma.pdf` and `Rohan-Sharma.jpg` with your actual files.
+- **Resume & Profile Picture:** Remember to replace the placeholder `resume-john-doe.pdf` and `John-Doe.jpg` with your actual files.
 - **External Libraries:** This template uses CDN links for AOS, Lottie, and Tailwind CSS. While convenient, for production, you might consider self-hosting these libraries for better control and performance, especially if you plan extensive custom builds.
 
 ---
