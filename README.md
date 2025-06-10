@@ -1,20 +1,21 @@
-# Rohan Sharma – Modern Front-End Developer Portfolio Template
+# ClearFolio – Responsive Portfolio Template
 
-## 🚀 Welcome to your next stunning portfolio!
+## Welcome to your next stunning portfolio!
 
 This is a clean, modern, and highly customizable front-end developer portfolio template designed to help you showcase your skills, projects, and services in the most engaging way possible. Built with the latest web technologies, it ensures a responsive, performant, and visually appealing experience across all devices.
+This is a personal portfolio template with demo content using the name "Rohan Sharma". You can easily replace it with your own.
 
 Whether you're a seasoned developer or just starting, this template provides a perfect foundation to establish your online presence and impress potential clients or employers.
 
 ---
 
-## ✨ Live Demo
+##  Live Demo
 
 Experience the template in action!
 
-👉 [**View Live Website Demo**](https://portfolio-template-one-inky.vercel.app/)
+ [**View Live Website Demo**](https://portfolio-template-one-inky.vercel.app/)
 
-## 📌 Key Features
+##  Key Features
 
 - **Modern & Sleek Design:** A clean, visually appealing layout that puts your work first.
 - **Fully Responsive:** Optimized for desktop, tablet, and mobile devices, ensuring a seamless experience for all users.
@@ -31,7 +32,7 @@ Experience the template in action!
 
 ---
 
-## 📚 Technologies Used
+## Technologies Used
 
 - **HTML5:** The core structure of the template.
 - **Tailwind CSS:** A utility-first CSS framework for styling.
@@ -40,7 +41,7 @@ Experience the template in action!
 - **LottieFiles / Lottie Web:** For integrating scalable vector animations.
 - **Google Fonts:** For modern and elegant typography (`Poppins`, `Gloria Hallelujah`, `Tangerine`).
 
-## 📁 Folder Structure
+##  Folder Structure
 
 <pre>
 ├── index.html                  // Main HTML file for the portfolio
@@ -53,7 +54,7 @@ Experience the template in action!
 └── README.md                   // This documentation file
 </pre>
 
-## 🛠️ How to Use and Customize
+##  How to Use and Customize
 
 Follow these simple steps to set up and personalize your new portfolio template:
 
@@ -110,7 +111,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 - **Contact Form:** The contact form is purely a UI (User Interface). To make it send emails, you will need to integrate it with a backend service (e.g., Formspree, Netlify Forms, custom server-side script with Node.js, PHP, etc.). This template _does not_ include backend functionality.
 - **Resume & Profile Picture:** Remember to replace the placeholder `resume-rohan-sharma.pdf` and `Rohan-Sharma.jpg` with your actual files.
@@ -118,7 +119,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 
 ---
 
-## 🤝 Credits
+##  Credits
 
 - **Tailwind CSS:** For the fantastic utility-first framework.
 - **AOS (Animate On Scroll):** Michalsnik for the smooth scroll animations.
@@ -128,7 +129,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 
 ---
 
-## ✉️ Support
+##  Support
 
 If you have any questions or need assistance with this template, please don't hesitate to reach out through the Envato comments section or my profile page. I'm here to help you get the most out of your purchase!
 
