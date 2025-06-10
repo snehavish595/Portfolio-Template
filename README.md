@@ -12,7 +12,7 @@ Whether you're a seasoned developer or just starting, this template provides a p
 
 Experience the template in action!
 
-👉 [**View Live Website Demo**](https://snehavish595.github.io/Portfolio-Template/)-
+👉 [**View Live Website Demo**](https://portfolio-template-one-inky.vercel.app/)
 
 ## 📌 Key Features
 
