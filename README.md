@@ -3,7 +3,7 @@
 ## Welcome to your next stunning portfolio!
 
 This is a clean, modern, and highly customizable front-end developer portfolio template designed to help you showcase your skills, projects, and services in the most engaging way possible. Built with the latest web technologies, it ensures a responsive, performant, and visually appealing experience across all devices.
-This is a personal portfolio template with demo content using the name "Rohan Sharma". You can easily replace it with your own.
+This is a personal portfolio template with demo content using the name "John Doe". You can easily replace it with your own.
 
 Whether you're a seasoned developer or just starting, this template provides a perfect foundation to establish your online presence and impress potential clients or employers.
 
@@ -68,7 +68,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 
 ### 3. **Customize Content (`index.html`)**
 
-- **Your Name:** Update `"Rohan Sharma"` in the `h1` tag in the `index.html` file (specifically, the `nameToType` variable in `script.js` also controls the animated text).
+- **Your Name:** Update `"John Doe"` in the `h1` tag in the `index.html` file (specifically, the `nameToType` variable in `script.js` also controls the animated text).
 - **About Section:** Modify the text in the "About Me" section (`#about`).
 - **Skills:** Update your skills in the "Skills" section (`#skills`). Each skill can be an `img` tag with a caption.
 - **Projects:** Replace the placeholder project details (`#projects`) with your own. Ensure you update titles, descriptions, and links.
@@ -91,7 +91,7 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 ### 5. **Customize JavaScript (`script.js`)**
 
 - **Typewriter Effect:**
-  - `nameToType`: Change `"Rohan Sharma"` to your name.
+  - `nameToType`: Change `"John Doe"` to your name.
   - `typingSpeed`, `erasingSpeed`, `delayBeforeErase`, `delayBeforeType`: Adjust these variables to control the speed and timing of the typing and erasing animation.
 - **Lottie Animations:**
   - The background bubble animation uses a Lottie JSON file. You can replace `https://assets4.lottiefiles.com/packages/lf20_tll0j4bb.json` with your own Lottie animation URL.
@@ -135,7 +135,7 @@ If you have any questions or need assistance with this template, please don't he
 
 ---
 
-**Thank you for choosing Rohan Sharma – Modern Front-End Developer Portfolio Template!**
+**Thank you for choosing John Doe – Modern Front-End Developer Portfolio Template!**
 We hope it helps you land your next big opportunity.
 
 ---

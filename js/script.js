@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const nameElement = document.getElementById("typed-name");
   const cursorElement = document.getElementById("cursor");
-  const nameToType = "Rohan Sharma";
+  const nameToType = "John Doe";
   let index = 0;
 
   const typingSpeed = 150; // Milliseconds per character
