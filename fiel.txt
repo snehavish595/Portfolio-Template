@@ -1,6 +1,8 @@
 - add caligrapgy font in logo
+- works on skill section
+- add one more section
+
 - add aniamtion in hero section heading
 - write proper comments and add maintain code quality
-- add one more section
+- rearrab=neg all the section
 - add animation in nav items when scrolling to a particular section
-- works on skill section

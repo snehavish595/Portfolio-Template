@@ -36,6 +36,7 @@
             fontFamily: {
               poppins: ["Poppins", "sans-serif"],
               gloria: ['"Gloria Hallelujah"', "cursive"],
+              tangerine: ['"Tangerine"', "cursive"], // 👈 Add this line
             },
           },
         },
@@ -47,6 +48,11 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -73,17 +79,17 @@
           <!-- Logo -->
           <a
             href="#"
-            class="text-xl md:text-3xl font-extrabold text-[#ff004f] tracking-wide font-poppins"
+            class="text-xl md:text-3xl font-extrabold text-[#ff004f] tracking-wide font-gloria"
           >
             Rohan Sharma
           </a>
 
           <!-- Desktop Navigation -->
           <div
-            class="hidden md:flex items-center space-x-8 text-sm font-medium"
+            class="hidden md:flex items-center space-x-8 text-md font-medium"
           >
             <template
-              x-for="link in ['Home', 'About', 'Education', 'Projects', 'Contact']"
+              x-for="link in ['Home', 'About', 'Resume', 'Projects', 'Contact']"
               :key="link"
             >
               <a
@@ -189,7 +195,7 @@
 
     <!-- Hero Section -->
     <section
-      id="hero"
+      id="home"
       class="relative bg-bg text-text min-h-[100vh] flex items-center justify-center overflow-hidden px-4 pt-24"
     >
       <!-- Background Glow -->
@@ -252,80 +258,250 @@
       </div>
     </section>
 
-    <!-- Skills / Capabilities Section -->
-    <section id="skills" class="bg-bg text-white py-24 px-6 md:px-16">
-      <div class="max-w-7xl mx-auto">
-        <!-- Heading -->
-        <div class="text-center mb-20" data-aos="fade-up">
-          <h2 class="text-4xl font-extrabold mb-4 text-accent font-sora">
-            What I Love to Build
+        <!-- About Me Section -->
+    <section
+      id="about"
+      class="relative bg-bg text-text py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
+    >
+      <!-- Background Effects -->
+      <div
+        class="absolute top-0 left-0 w-80 h-80 bg-accent opacity-20 blur-[100px] rounded-full"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-72 h-72 bg-white opacity-10 blur-[80px] rounded-full"
+      ></div>
+
+      <div class="relative max-w-4xl mx-auto text-center z-10">
+        <div class="mb-10" data-aos="fade-down">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accent">
+            About Me
           </h2>
-          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-            More than just code — I craft digital experiences with performance,
-            accessibility, and scalability in mind.
+          <div class="mx-auto mt-2 h-1 w-40 bg-accent rounded-full"></div>
+        </div>
+        <!-- Profile Image -->
+        <div
+          class="relative mx-auto w-44 h-44 rounded-full overflow-hidden border-[5px] border-accent shadow-xl mb-10"
+          data-aos="zoom-in"
+        >
+          <img
+            src="assets/images/Rohan-Sharma.jpg"
+            alt="Rohan Sharma"
+            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
+          />
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight"
+          data-aos="fade-up"
+        >
+          Hello, I’m <span class="text-accent">Rohan Sharma</span>
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="text-lg text-gray-300 mb-5 leading-relaxed max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          A front-end developer from India with 2+ years of experience building
+          lightning-fast, responsive, and pixel-perfect websites using modern
+          JavaScript frameworks.
+        </p>
+        <p
+          class="text-base text-gray-400 mb-10 max-w-3xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          I focus on elegant UI design, scalable frontend systems, and crafting
+          enjoyable user journeys. When I’m not coding, I love sketching or
+          capturing moments.
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="mb-10" data-aos="fade-up" data-aos-delay="100">
+          <h3
+            class="text-sm font-bold text-accent tracking-widest uppercase mb-4"
+          >
+            Tech Stack
+          </h3>
+          <div class="flex flex-wrap justify-center gap-3">
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >HTML</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >Tailwind CSS</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >JavaScript</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >ReactJS</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >Node.js</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >Express.js</span
+            >
+            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
+              >MongoDB</span
+            >
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <a
+          href="#projects"
+          class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-[#e60047] text-white text-sm font-semibold rounded-full shadow-lg transition-transform transform hover:scale-105"
+          data-aos="zoom-in-up"
+          data-aos-delay="300"
+        >
+          View My Work
+        </a>
+      </div>
+    </section>
+
+        <!-- 6️⃣ Skills Section -->
+    <section
+      id="skills"
+      class="relative bg-bg text-white py-24 px-6 md:px-16 overflow-hidden"
+    >
+      <!-- Accent Glow Background -->
+      <div
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-accent opacity-10 rounded-full blur-[120px] pointer-events-none"
+      ></div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div
+          class="text-center mb-16"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <h2
+            class="text-5xl font-extrabold text-accent mb-4 font-poppins tracking-tight"
+          >
+            Tech Stack
+          </h2>
+          <p class="text-gray-400 text-lg max-w-xl mx-auto">
+            Languages, libraries & tools I build modern web applications with.
           </p>
         </div>
 
         <!-- Skills Grid -->
-        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center"
+        >
+          <!-- Skill Card -->
           <div
-            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div
-              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
-            >
-              <i class="fas fa-paint-brush text-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Design Thinking</h3>
-            <p class="text-gray-400">
-              I approach UI/UX with empathy and creativity — creating interfaces
-              that are both intuitive and engaging.
-            </p>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:-rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">HTML5</p>
           </div>
 
-          <!-- Card 2 -->
           <div
-            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div
-              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
-            >
-              <i class="fas fa-laptop-code text-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Modern Development</h3>
-            <p class="text-gray-400">
-              I build fast, responsive web apps using React, Tailwind CSS, and
-              modern JS — optimized for performance.
-            </p>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">CSS3</p>
           </div>
 
-          <!-- Card 3 -->
           <div
-            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div
-              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
-            >
-              <i class="fas fa-rocket text-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold mb-3">Scalable Execution</h3>
-            <p class="text-gray-400">
-              I bring clean architecture and reusable components that scale with
-              your product as it grows.
-            </p>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:-rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">JavaScript</p>
+          </div>
+
+          <div
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+              alt="Tailwind"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">Tailwind CSS</p>
+          </div>
+
+          <div
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:-rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">React</p>
+          </div>
+
+          <div
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node.js"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">Node.js</p>
+          </div>
+
+          <div
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              alt="Express.js"
+              class="h-12 mx-auto mb-4 bg-white p-1 rounded transition-transform group-hover:scale-110 group-hover:-rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">Express.js</p>
+          </div>
+
+          <div
+            class="group bg-[#1a1a1a] border border-gray-700 rounded-xl p-8 shadow-md transition-all duration-300 transform hover:scale-105 hover:border-accent hover:shadow-[0_0_20px_#ff004f44]"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+              alt="MongoDB"
+              class="h-12 mx-auto mb-4 transition-transform group-hover:scale-110 group-hover:rotate-6"
+            />
+            <p class="font-semibold text-white text-lg">MongoDB</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+        <!-- Projects Section -->
     <section id="projects" class="bg-bg text-white py-24 px-6 md:px-16">
       <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
@@ -479,296 +655,157 @@
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section
-      id="about"
-      class="relative bg-bg text-text py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-    >
-      <!-- Background Effects -->
-      <div
-        class="absolute top-0 left-0 w-80 h-80 bg-accent opacity-20 blur-[100px] rounded-full"
-      ></div>
-      <div
-        class="absolute bottom-0 right-0 w-72 h-72 bg-white opacity-10 blur-[80px] rounded-full"
-      ></div>
+<!-- Resume Section -->
+<section
+  id="resume"
+  class="bg-bg text-white py-24 px-6 md:px-16 overflow-hidden relative"
+>
+  <!-- Background Glow -->
+  <div
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent opacity-10 rounded-full blur-[140px] pointer-events-none"
+  ></div>
 
-      <div class="relative max-w-4xl mx-auto text-center z-10">
-        <div class="mb-10" data-aos="fade-down">
-          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accent">
-            About Me
-          </h2>
-          <div class="mx-auto mt-2 h-1 w-40 bg-accent rounded-full"></div>
-        </div>
-        <!-- Profile Image -->
-        <div
-          class="relative mx-auto w-44 h-44 rounded-full overflow-hidden border-[5px] border-accent shadow-xl mb-10"
-          data-aos="zoom-in"
-        >
-          <img
-            src="assets/images/Rohan-Sharma.jpg"
-            alt="Rohan Sharma"
-            class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700"
-          />
-        </div>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-5xl font-extrabold text-accent mb-4 font-poppins tracking-tight">
+        Resume
+      </h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        A quick glance at my education and work experience.
+      </p>
+    </div>
 
-        <!-- Heading -->
-        <h2
-          class="text-4xl sm:text-5xl font-extrabold mb-4 leading-tight"
-          data-aos="fade-up"
-        >
-          Hello, I’m <span class="text-accent">Rohan Sharma</span>
-        </h2>
-
-        <!-- Description -->
-        <p
-          class="text-lg text-gray-300 mb-5 leading-relaxed max-w-3xl mx-auto"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-          A front-end developer from India with 2+ years of experience building
-          lightning-fast, responsive, and pixel-perfect websites using modern
-          JavaScript frameworks.
-        </p>
-        <p
-          class="text-base text-gray-400 mb-10 max-w-3xl mx-auto"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          I focus on elegant UI design, scalable frontend systems, and crafting
-          enjoyable user journeys. When I’m not coding, I love sketching or
-          capturing moments.
-        </p>
-
-        <!-- Tech Stack -->
-        <div class="mb-10" data-aos="fade-up" data-aos-delay="100">
-          <h3
-            class="text-sm font-bold text-accent tracking-widest uppercase mb-4"
-          >
-            Tech Stack
-          </h3>
-          <div class="flex flex-wrap justify-center gap-3">
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >HTML</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >Tailwind CSS</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >JavaScript</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >ReactJS</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >Node.js</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >Express.js</span
-            >
-            <span class="bg-white/10 text-white px-4 py-1 rounded-full text-sm"
-              >MongoDB</span
-            >
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+      <!-- Education Column -->
+      <div class="flex flex-col space-y-10">
+        <h3 class="text-3xl font-bold text-accent text-center underline">Education</h3>
+        <div class="space-y-10">
+          <div class="border-l-4 border-accent pl-6 relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="absolute -left-[10px] top-0 w-5 h-5 bg-accent rounded-full"></div>
+            <h4 class="text-2xl font-semibold">B.Tech in Computer Science</h4>
+            <p class="text-gray-400 text-sm mb-2">XYZ University • 2017 – 2021</p>
+            <p class="text-gray-300 text-base">
+              Specialized in frontend development, data structures, and full-stack web projects.
+            </p>
+          </div>
+          <div class="border-l-4 border-accent pl-6 relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute -left-[10px] top-0 w-5 h-5 bg-accent rounded-full"></div>
+            <h4 class="text-2xl font-semibold">Higher Secondary Education</h4>
+            <p class="text-gray-400 text-sm mb-2">ABC Senior School • 2015 – 2017</p>
+            <p class="text-gray-300 text-base">
+              Completed with distinction in Science stream with focus on Mathematics and Computer Science.
+            </p>
           </div>
         </div>
-
-        <!-- CTA -->
-        <a
-          href="#projects"
-          class="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-[#e60047] text-white text-sm font-semibold rounded-full shadow-lg transition-transform transform hover:scale-105"
-          data-aos="zoom-in-up"
-          data-aos-delay="300"
-        >
-          View My Work
-        </a>
-      </div>
-    </section>
-
-    <!-- 6️⃣ Skills Section -->
-    <section
-      id="skills"
-      class="relative bg-gradient-to-br from-white via-gray-50 to-gray-200 dark:from-[#0f0f0f] dark:via-[#111] dark:to-[#1a1a1a] py-24 px-6 md:px-12 border-t border-gray-200 dark:border-gray-800 overflow-hidden"
-    >
-      <!-- Animated Floating Background Elements -->
-      <div class="absolute inset-0 overflow-hidden z-0">
-        <div
-          class="absolute top-[10%] left-[15%] w-36 h-36 bg-pink-500 opacity-20 blur-3xl rounded-full animate-pulse"
-        ></div>
-        <div
-          class="absolute bottom-[15%] right-[10%] w-48 h-48 bg-indigo-500 opacity-10 blur-3xl rounded-full animate-ping"
-        ></div>
-        <div
-          class="absolute top-[50%] left-[70%] w-24 h-24 bg-yellow-400 opacity-20 blur-2xl rounded-full animate-bounce"
-        ></div>
       </div>
 
-      <div class="max-w-6xl mx-auto relative z-10">
-        <!-- Section Heading -->
-        <div class="text-center mb-16" data-aos="fade-down">
-          <h2
-            class="text-4xl font-extrabold text-gray-900 dark:text-white mb-3"
-          >
-            Skills
+      <!-- Experience Column -->
+      <div class="flex flex-col space-y-10">
+        <h3 class="text-3xl font-bold text-accent text-center underline">Work Experience</h3>
+        <div class="space-y-10">
+          <div class="border-l-4 border-accent pl-6 relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="absolute -left-[10px] top-0 w-5 h-5 bg-accent rounded-full"></div>
+            <h4 class="text-2xl font-semibold">Frontend Developer</h4>
+            <p class="text-gray-400 text-sm mb-2">WebTech Studio • 2021 – Present</p>
+            <p class="text-gray-300 text-base">
+              Developed and maintained dynamic websites and dashboards using React, Tailwind CSS, and RESTful APIs with performance and UX in focus.
+            </p>
+          </div>
+          <div class="border-l-4 border-accent pl-6 relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="absolute -left-[10px] top-0 w-5 h-5 bg-accent rounded-full"></div>
+            <h4 class="text-2xl font-semibold">Intern - Web Development</h4>
+            <p class="text-gray-400 text-sm mb-2">Tech Solutions Pvt Ltd • Jan – Jun 2021</p>
+            <p class="text-gray-300 text-base">
+              Worked on client projects and improved UI consistency across internal tools using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="bg-bg text-white py-24 px-6 md:px-16">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+        <div class="text-center mb-20" data-aos="fade-up">
+          <h2 class="text-4xl font-extrabold mb-4 text-accent font-sora">
+            What I Love to Build
           </h2>
-          <p class="text-gray-600 dark:text-gray-400 text-lg">
-            Technologies I use to build fast and modern web apps.
+          <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+            More than just code — I craft digital experiences with performance,
+            accessibility, and scalability in mind.
           </p>
         </div>
 
-        <div
-          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-center"
-        >
-          <!-- Skill Card Template -->
+        <!-- Skills Grid -->
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
           <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
-          >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="HTML"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">HTML5</p>
-            </div>
-            <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-indigo-100/20 to-pink-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
-          </div>
-
-          <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
+            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="CSS"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">CSS3</p>
-            </div>
             <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-blue-100/20 to-purple-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
+              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
+            >
+              <i class="fas fa-paint-brush text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Design Thinking</h3>
+            <p class="text-gray-400">
+              I approach UI/UX with empathy and creativity — creating interfaces
+              that are both intuitive and engaging.
+            </p>
           </div>
 
+          <!-- Card 2 -->
           <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
+            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="JavaScript"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">
-                JavaScript
-              </p>
-            </div>
             <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-yellow-100/20 to-orange-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
+              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
+            >
+              <i class="fas fa-laptop-code text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Modern Development</h3>
+            <p class="text-gray-400">
+              I build fast, responsive web apps using React, Tailwind CSS, and
+              modern JS — optimized for performance.
+            </p>
           </div>
 
+          <!-- Card 3 -->
           <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
+            class="group relative border border-gray-700 bg-black/20 backdrop-blur p-8 rounded-2xl transition-all hover:border-accent hover:shadow-xl hover:-translate-y-2"
+            data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div class="relative z-10">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="Tailwind CSS"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">
-                Tailwind CSS
-              </p>
-            </div>
             <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-teal-100/20 to-cyan-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
-          </div>
-
-          <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
-            data-aos-delay="400"
-          >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="React"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">React</p>
+              class="w-12 h-12 flex items-center justify-center bg-accent/20 text-accent rounded-full mb-6 transition group-hover:bg-accent group-hover:text-white"
+            >
+              <i class="fas fa-rocket text-xl"></i>
             </div>
-            <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-sky-100/20 to-indigo-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
-          </div>
-
-          <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
-            data-aos-delay="500"
-          >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="Node.js"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">Node.js</p>
-            </div>
-            <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-green-100/20 to-lime-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
-          </div>
-
-          <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
-            data-aos-delay="600"
-          >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                class="h-12 mx-auto mb-3 bg-white p-1 rounded group-hover:scale-110 transition duration-300"
-                alt="Express.js"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">
-                Express.js
-              </p>
-            </div>
-            <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-zinc-100/20 to-neutral-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
-          </div>
-
-          <div
-            class="relative group p-6 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow transition-all duration-300 hover:shadow-lg hover:scale-[1.03]"
-            data-aos="flip-up"
-            data-aos-delay="700"
-          >
-            <div class="relative z-10">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                class="h-12 mx-auto mb-3 group-hover:scale-110 transition duration-300"
-                alt="MongoDB"
-              />
-              <p class="text-gray-800 dark:text-white font-semibold">MongoDB</p>
-            </div>
-            <div
-              class="absolute inset-0 z-0 rounded-xl bg-gradient-to-br from-emerald-100/20 to-green-100/10 blur-sm opacity-0 group-hover:opacity-100 transition duration-500"
-            ></div>
+            <h3 class="text-xl font-bold mb-3">Scalable Execution</h3>
+            <p class="text-gray-400">
+              I bring clean architecture and reusable components that scale with
+              your product as it grows.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
 
     <!-- Contact Section -->
     <section
@@ -982,62 +1019,97 @@
     </section>
 
     <!-- Footer Section -->
- <footer class="relative bg-[#0d0d0d] text-gray-400 py-12 px-6 text-center overflow-hidden">
-  <!-- Subtle Lottie on left corner -->
-  <div class="absolute left-4 bottom-4 w-40 z-0 opacity-10 pointer-events-none">
-    <lottie-player
-      src="https://assets4.lottiefiles.com/packages/lf20_3rwasyjy.json"
-      background="transparent"
-      speed="1"
-      loop
-      autoplay
-      style="width: 100%; height: 100%"
-    ></lottie-player>
-  </div>
+    <footer
+      class="relative bg-[#0d0d0d] text-gray-400 py-12 px-6 text-center overflow-hidden"
+    >
+      <!-- Subtle Lottie on left corner -->
+      <div
+        class="absolute left-4 bottom-4 w-40 z-0 opacity-10 pointer-events-none"
+      >
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_3rwasyjy.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          style="width: 100%; height: 100%"
+        ></lottie-player>
+      </div>
 
-  <!-- Main content -->
-  <div class="relative z-10 max-w-xl mx-auto">
-    <h2 class="text-xl font-semibold text-white mb-1">Rohan Sharma</h2>
-    <p class="text-sm text-gray-400 mb-4">Front-End Developer</p>
+      <!-- Main content -->
+      <div class="relative z-10 max-w-xl mx-auto">
+        <h2 class="text-xl font-semibold text-white mb-1">Rohan Sharma</h2>
+        <p class="text-sm text-gray-400 mb-4">Front-End Developer</p>
 
-    <!-- Social icons -->
-    <div class="flex justify-center items-center gap-5 mb-6">
-      <!-- Email -->
-      <a href="mailto:rohan.sharma@email.com" class="group">
-        <div class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition">
-          <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 16V8l-8 8-8-8v12h16z"/>
-          </svg>
+        <!-- Social icons -->
+        <div class="flex justify-center items-center gap-5 mb-6">
+          <!-- Email -->
+          <a href="mailto:rohan.sharma@email.com" class="group">
+            <div
+              class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13l8-8.99V4H4zm16 16V8l-8 8-8-8v12h16z"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/rohan-dev"
+            target="_blank"
+            class="group"
+          >
+            <div
+              class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5C6.62 9.5 7.96 8.16 7.96 6.5C7.96 4.84 6.62 3.5 4.98 3.5ZM2.4 21H7.6V10.3H2.4V21ZM10.5 10.3H15.2V11.9H15.3C15.8 10.9 17.1 9.8 18.9 9.8C22 9.8 22.4 11.9 22.4 15.1V21H17.2V15.6C17.2 14.1 17.2 12.2 15.2 12.2C13.1 12.2 12.8 13.9 12.8 15.5V21H10.5V10.3Z"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/rohan-dev" target="_blank" class="group">
+            <div
+              class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 .5A12 12 0 0 0 .5 12a12 12 0 0 0 8.2 11.5c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.5-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.6 11.6 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.3 1.9 1.3 3.2 0 4.6-2.7 5.6-5.4 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0 0 23.5 12 12 12 0 0 0 12 .5z"
+                />
+              </svg>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/in/rohan-dev" target="_blank" class="group">
-        <div class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5C6.62 9.5 7.96 8.16 7.96 6.5C7.96 4.84 6.62 3.5 4.98 3.5ZM2.4 21H7.6V10.3H2.4V21ZM10.5 10.3H15.2V11.9H15.3C15.8 10.9 17.1 9.8 18.9 9.8C22 9.8 22.4 11.9 22.4 15.1V21H17.2V15.6C17.2 14.1 17.2 12.2 15.2 12.2C13.1 12.2 12.8 13.9 12.8 15.5V21H10.5V10.3Z"/>
-          </svg>
-        </div>
-      </a>
-
-      <!-- GitHub -->
-      <a href="https://github.com/rohan-dev" target="_blank" class="group">
-        <div class="w-10 h-10 rounded-full bg-[#ff004f] flex items-center justify-center group-hover:scale-110 transition">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M12 .5A12 12 0 0 0 .5 12a12 12 0 0 0 8.2 11.5c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.6-1.5-1.4-2-1.4-2-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.6 11.6 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.3 1.9 1.3 3.2 0 4.6-2.7 5.6-5.4 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0 0 23.5 12 12 12 0 0 0 12 .5z"/>
-          </svg>
-        </div>
-      </a>
-    </div>
-
-    <!-- Copyright -->
-    <p class="text-xs text-gray-500">
-      © 2025 Rohan Sharma • Built with <span class="text-[#ff004f] font-medium">HTML</span> & 
-      <span class="text-[#ff004f] font-medium">Tailwind CSS</span>
-    </p>
-  </div>
-</footer>
+        <!-- Copyright -->
+        <p class="text-xs text-gray-500">
+          © 2025 Rohan Sharma • Built with
+          <span class="text-[#ff004f] font-medium">HTML</span> &
+          <span class="text-[#ff004f] font-medium">Tailwind CSS</span>
+        </p>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
