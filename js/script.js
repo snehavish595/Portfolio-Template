@@ -41,3 +41,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(typeWriter, 1000); // Start after 1 second
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  AOS.init({
+    duration: 800,
+    once: true,
+  });
+
+  lottie.loadAnimation({
+    container: document.getElementById("bubble-lottie"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "https://assets4.lottiefiles.com/packages/lf20_tll0j4bb.json",
+  });
+
+  lottie.loadAnimation({
+    container: document.getElementById("bubble-lottie"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "https://assets7.lottiefiles.com/packages/lf20_HpFqiS.json",
+  });
+});

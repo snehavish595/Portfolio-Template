@@ -692,7 +692,6 @@
             </div>
           </div>
 
-          <!-- Duplicate the same card and update content accordingly -->
           <!-- Project Card Example #2 -->
           <div
             class="relative group bg-black/30 backdrop-blur-md border border-gray-700 p-6 rounded-2xl transition-all hover:shadow-2xl hover:scale-[1.02] duration-300"
@@ -1159,38 +1158,9 @@
       </div>
     </footer>
 
+    <!-- Load libraries -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-      AOS.init({
-        duration: 800, // animation duration
-        once: true, // whether animation should happen only once
-      });
-    </script>
     <script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        lottie.loadAnimation({
-          container: document.getElementById("bubble-lottie"),
-          renderer: "svg",
-          loop: true,
-          autoplay: true,
-          path: "https://assets4.lottiefiles.com/packages/lf20_tll0j4bb.json", // Light bubble animation (or replace with your own)
-        });
-
-        // Lottie background
-        lottie.loadAnimation({
-          container: document.getElementById("bubble-lottie"),
-          renderer: "svg",
-          loop: true,
-          autoplay: true,
-          path: "https://assets7.lottiefiles.com/packages/lf20_HpFqiS.json", // cool background animation
-        });
-      });
-    </script>
   </body>
 </html>

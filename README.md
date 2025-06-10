@@ -12,9 +12,7 @@ Whether you're a seasoned developer or just starting, this template provides a p
 
 Experience the template in action!
 
-👉 [**View Live Website Demo**](https://snehavish595.github.io/Portfolio-Template/) _(Please replace this with your actual live demo URL once deployed)_
-
----
+👉 [**View Live Website Demo**](https://snehavish595.github.io/Portfolio-Template/)-
 
 ## 📌 Key Features
 
@@ -117,11 +115,6 @@ Unzip the downloaded file and open the project folder in your favorite code edit
 - **Contact Form:** The contact form is purely a UI (User Interface). To make it send emails, you will need to integrate it with a backend service (e.g., Formspree, Netlify Forms, custom server-side script with Node.js, PHP, etc.). This template _does not_ include backend functionality.
 - **Resume & Profile Picture:** Remember to replace the placeholder `resume-rohan-sharma.pdf` and `Rohan-Sharma.jpg` with your actual files.
 - **External Libraries:** This template uses CDN links for AOS, Lottie, and Tailwind CSS. While convenient, for production, you might consider self-hosting these libraries for better control and performance, especially if you plan extensive custom builds.
-- **AOS Initialization:** There are two AOS initialization scripts in `index.html`. You only need one. It's recommended to keep the one inside the `DOMContentLoaded` listener in `script.js` or directly before the closing `</body>` tag if you separate it, ensuring it runs after the DOM is fully loaded. (The current `script.js` already includes `AOS.init()` inside `DOMContentLoaded` so you can remove the other instances).
-  ```html
-
-  ```
-  _(Self-correction: The provided `index.html` has two `AOS.init()` calls. The one inside `script.js` is better placed. You should remove the redundant ones in `index.html` to avoid conflicts.)_
 
 ---
 
